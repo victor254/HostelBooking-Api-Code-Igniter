@@ -1,0 +1,45 @@
+# For a quick start check out our HTTP Requests collection (Tools|HTTP Client|Open HTTP Requests Collection).
+#
+# Following HTTP Request Live Templates are available:
+# * 'gtrp' and 'gtr' create a GET request with or without query parameters;
+# * 'ptr' and 'ptrp' create a POST request with a simple or parameter-like body;
+# * 'mptr' and 'fptr' create a POST request to submit a form with a text or file field (multipart/form-data);
+
+GET /index.php/api/v1/admin/staff/listStaff HTTP/1.1
+Host: 192.168.43.1:8081
+x-api-key: ok8c4840444044w48csw8k40c4wcw0gogos0okok
+Authorization: Digest username="admin", realm="REST API", nonce="5bd4b8705d2a6", uri="/index.php/api/v1/students/bookings/students", algorithm="MD5", qop=auth, nc=00000001, cnonce="FRKpnam4", response="b1a5c351c48518ad499a452670f7f704", opaque="aba3d4b49c454e1974970e7b5514b001"
+Cache-Control: no-cache
+Postman-Token: 1568c9b4-65c1-443b-81f0-22cbd85cd85c
+####
+POST /index.php/api/v1/admin/staff/login HTTP/1.1
+Host: 192.168.43.1:8081
+x-api-key: ok8c4840444044w48csw8k40c4wcw0gogos0okok
+Content-Type: application/json
+Authorization: Digest username="admin", realm="REST API", nonce="5bd4c796e987b", uri="/index.php/api/v1/admin/staff/login", algorithm="MD5", qop=auth, nc=00000001, cnonce="Oe3KidLn", response="cf69881e5665ce6b6a0e101feb140be6", opaque="aba3d4b49c454e1974970e7b5514b001"
+Cache-Control: no-cache
+Postman-Token: 465b70d8-388b-4de2-acbc-327099c23494
+
+{
+  "staff_email":"victorkiambati@gmail.com",
+  "staff_password":"shithappens"
+}
+###
+GET /index.php/api/v1/students/bookings/availablerooms/ravers/3 HTTP/1.1
+Host: 192.168.43.1:8081
+x-api-key: ok8c4840444044w48csw8k40c4wcw0gogos0okok
+Content-Type: application/json
+Authorization: Digest username="admin", realm="REST API", nonce="5bd4cb0f30635", uri="/index.php/api/v1/students/bookings/availablerooms/NeleonBlock/2", algorithm="MD5", qop=auth, nc=00000001, cnonce="swBpqyTf", response="d4eca67d1518410270e3de9b9e9513a5", opaque="aba3d4b49c454e1974970e7b5514b001"
+Cache-Control: no-cache
+Postman-Token: e9fea7cf-74b2-4802-b804-689bd0c9e396
+
+###
+GET /index.php/api/v1/students/bookings/students/getHostels HTTP/1.1
+Host: 192.168.43.1:8081
+x-api-key: ok8c4840444044w48csw8k40c4wcw0gogos0okok
+Content-Type: application/json
+Authorization: Digest username="admin", realm="REST API", nonce="5bd4cb0f30635", uri="/index.php/api/v1/students/bookings/availablerooms/NeleonBlock/2", algorithm="MD5", qop=auth, nc=00000001, cnonce="swBpqyTf", response="d4eca67d1518410270e3de9b9e9513a5", opaque="aba3d4b49c454e1974970e7b5514b001"
+Cache-Control: no-cache
+Postman-Token: e9fea7cf-74b2-4802-b804-689bd0c9e396
+
+###
